@@ -17,7 +17,7 @@ library(dplyr)
 library(readr)
 
 # Import the data
-capacity_data <- read.csv("data/working/capacity/capacity_long.csv")
+capacity_data <- read.csv("data/final_data/capacity.csv")
 
 # Regional capacity
 regional_capacity <- capacity_data %>%
@@ -405,6 +405,6 @@ Plot.plot({
 
 
 ```{ojs}
-original_cap_data = FileAttachment("data/working/capacity/capacity_long.csv").csv({ typed: true })
+original_cap_data = FileAttachment("data/final_data/capacity.csv").csv({ typed: true })
 cap_data = original_cap_data.map((d) => ({...d, "Prime Mover": d.prime_mover}))
 ```

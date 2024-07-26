@@ -22,7 +22,7 @@ Individual tables can be downloaded here as text files (CSV, comma-separated val
 
 ```{ojs}
 capacity_wide_description = metadata.resources[0].description;
-capacity_wide_raw = FileAttachment("data/working/capacity/capacity_wide.csv").csv({typed: true});
+capacity_wide_raw = FileAttachment("data/final_data/capacity.csv").csv({typed: true});
 
 capacity_wide = tidy(capacity_wide_raw,
                   filter((d) => d.year < 2020))
@@ -62,7 +62,7 @@ button(capacity_wide, `capacity.csv`, `Capacity`)
 
 ```{ojs}
 net_generation_wide_description = metadata.resources[2].description
-net_generation_wide_raw = FileAttachment("data/working/generation/net_generation_wide.csv").csv({typed: true});
+net_generation_wide_raw = FileAttachment("data/final_data/generation.csv").csv({typed: true});
 
 net_generation_wide = tidy(net_generation_wide_raw,
                   filter((d) => d.year < 2020))
@@ -85,8 +85,8 @@ Inputs.table(generation_input);
 :::
 ::: {.column width="80%"}
 ```{ojs}
-button(net_generation_wide_metadata, 'net_generation_wide_metadata.csv', `Generation Metadata`)
-button(net_generation_wide, `net_generation_wide.csv`, `Net Generation`)
+button(net_generation_wide_metadata, 'net_generation_metadata.csv', `Generation Metadata`)
+button(net_generation_wide, `generation.csv`, `Net Generation`)
 ```
 :::
 :::
@@ -99,7 +99,7 @@ button(net_generation_wide, `net_generation_wide.csv`, `Net Generation`)
 
 ```{ojs}
 consumption_wide_description = metadata.resources[4].description
-consumption_wide_raw = FileAttachment("data/working/consumption/consumption_wide.csv").csv({typed: true});
+consumption_wide_raw = FileAttachment("data/final_data/consumption.csv").csv({typed: true});
 
 consumption_wide = tidy(consumption_wide_raw,
                   filter((d) => d.year < 2020))
@@ -138,7 +138,7 @@ button(consumption_wide, `consumption_wide.csv`, `Consumption`)
 
 ```{ojs}
 prices_description = metadata.resources[6].description;
-prices_raw = FileAttachment("data/working/prices/prices.csv").csv({typed: true});
+prices_raw = FileAttachment("data/final_data/prices.csv").csv({typed: true});
 
 prices = tidy(prices_raw,
             filter((d) => d.year < 2020))
@@ -177,7 +177,7 @@ button(prices, `prices.csv`, `Prices`);
 
 ```{ojs}
 weighted_prices_description = metadata.resources[7].description;
-weighted_prices_raw = FileAttachment("data/working/prices/weighted_prices.csv").csv({typed: true});
+weighted_prices_raw = FileAttachment("data/final_data/weighted_prices.csv").csv({typed: true});
 
 weighted_prices = tidy(weighted_prices_raw,
                     filter((d) => d.year < 2020))
@@ -217,7 +217,7 @@ d3 = require("d3@7")
 import {tidy, groupBy, rename, summarize, sum, mutate, select, n, nDistinct, mean, filter, pivotWider, pivotLonger, leftJoin, slice} from "@pbeshai/tidyjs"
 
 // load metadata
-metadata = FileAttachment("data/metadata.json").json();
+metadata = FileAttachment("data/final_data/metadata.json").json();
 
 ```
 

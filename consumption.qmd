@@ -16,7 +16,7 @@ library(dplyr)
 library(tidyr)
 
 # Import the consumption data
-consumption_data <- read.csv(file = "data/working/consumption/consumption_long.csv")
+consumption_data <- read.csv(file = "data/final_data/consumption.csv")
 
 # Regionalized consumption data
 regional_consumption_data <- consumption_data %>%
@@ -62,7 +62,7 @@ Statewide electricity consumption growth for the residential sector was `r state
 import {tidy, groupBy, rename, summarize, sum, mutate, select, n, nDistinct, mean, filter, pivotWider, pivotLonger, leftJoin, slice, fullJoin, lag, TMath, rowNumber,mutateWithSummary, arrange, asc} from "@pbeshai/tidyjs"
 
 // Import the consumption data
-consumption_data = FileAttachment("data/working/consumption/consumption_long.csv").csv({ typed: true })
+consumption_data = FileAttachment("data/final_data/consumption.csv").csv({ typed: true })
 
 // Condense the data for regional plotting
 regional_consumption_data = tidy(

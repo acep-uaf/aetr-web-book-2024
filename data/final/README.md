@@ -1,1 +1,0 @@
-data/final should be used as a directory for outgoing CSVs and public-facing data. 

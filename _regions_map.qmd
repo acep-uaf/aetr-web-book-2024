@@ -12,12 +12,12 @@ css=html`<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2
 ```
 
 ```{ojs}
-aea_regions = FileAttachment("data/working/regions/aea_regions.geojson").json()
-acep_regions = FileAttachment("data/working/regions/acep_regions.geojson").json()
+aea_regions = FileAttachment("data/final_data/aea_regions.geojson").json()
+acep_regions = FileAttachment("data/final_data/acep_regions.geojson").json()
 
-coords_json = FileAttachment("data/working/regions/coordinates.geojson").json()
+coords_json = FileAttachment("data/final_data/coordinates.geojson").json()
 
-// coords_csv = FileAttachment("data/working/regions/coordinates_pce.csv").csv({typed: true})
+// coords_csv = FileAttachment("data/final_data/coordinates_pce.csv").csv({typed: true})
 
 ```
 

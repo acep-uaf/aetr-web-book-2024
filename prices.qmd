@@ -19,7 +19,7 @@ library(stringr)
 library(ggplot2)
 library(ggiraph)
 
-weighted_prices <- read_csv("./data/working/prices/weighted_prices.csv")
+weighted_prices <- read_csv("./data/final_data/weighted_prices.csv")
 
 ```
 
@@ -466,7 +466,7 @@ d3 = require("d3@7")
 import {tidy, groupBy, rename, summarize, sum, mutate, select, n, nDistinct, mean, filter, pivotWider, pivotLonger, leftJoin, slice} from "@pbeshai/tidyjs"
 
 // load data
-prices = FileAttachment("data/working/prices/prices.csv").csv({typed: true});
-weighted_prices = FileAttachment("data/working/prices/weighted_prices.csv").csv({typed: true});
+prices = FileAttachment("data/final_data/prices.csv").csv({typed: true});
+weighted_prices = FileAttachment("./data/final_data/weighted_prices.csv").csv({typed: true});
 
 ```
