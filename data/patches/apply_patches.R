@@ -1,6 +1,6 @@
 # Identify all data patches
 patches <- list.dirs(
-    path = "./data/patches",
+    path = "./patches",
     full.names=TRUE,
     recursive=FALSE
   )
