@@ -1,5 +1,4 @@
-# This patch replaces the annualized EIA-923 data with the missing MLP SPP data
-# from MLP's FERC1.
+# This patch adds annual FERC1 data to EIA-923 to make whole the SPP generation.
 
 # Add missing MLP SPP data
 generation <- generation %>%
