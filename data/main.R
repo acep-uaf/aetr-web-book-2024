@@ -1,5 +1,4 @@
-# This script is run when a new patch is detected. It patches the raw data
-# and then transforms it into a distributed version (final).
+# Run this script when a new patch is added.
 
 # Library Requirements
 library(renv)
