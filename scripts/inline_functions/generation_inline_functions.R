@@ -2,7 +2,7 @@
 # Regional compound average growth rate
 #
 # Attributes
-#   - region: ACEP region (string), of ["Coastal","Railbelt","Rural Remote"]
+#   - region: ACEP region (string), of ["Coastal","Railbelt","Rural Remote", "Statewide"]
 #   - year1: First year of comparison (integer), default=2011
 #   - year2: Second year of comparison (integer), default=2021
 #   - decimals: Number of decimals for rounding (integer), default=2
@@ -18,11 +18,24 @@ cagr <- function(region, year1=2011, year2=2021, decimals=2) {
   # Define the number of periods
   n = year2 - year1
   
-  # Generation in year 1
-  gen_1 = (df[["total_gen"]][df$acep_region == region & df$year == year1])
+  # Statewide CAGR
+  if (region == "Statewide") {
+    # Generation in year 1
+    gen_1 = sum((df[["total_gen"]][df$year == year1]))
+    
+    # Generation in year 1
+    gen_2 = sum((df[["total_gen"]][df$year == year2]))
+    
+  }
   
-  # Generation in year 2
-  gen_2 = (df[["total_gen"]][df$acep_region == region & df$year == year2])
+  # Regional CAGR
+  if (region != "Statewide") {
+    # Generation in year 1
+    gen_1 = (df[["total_gen"]][df$acep_region == region & df$year == year1])
+    
+    # Generation in year 2
+    gen_2 = (df[["total_gen"]][df$acep_region == region & df$year == year2])
+  }
   
   # Compound Average Growth Rate Calculation
   result = (((gen_2 / gen_1)^(1/n)) - 1)*100
