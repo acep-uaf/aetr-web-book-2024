@@ -1,0 +1,8 @@
+year,plant_name_eia,utility_id_eia,plant_id_eia,gas_net_gen_mwh,oil_net_gen_mwh,source
+2011,NSB Nuiqsut Utility,26616,7484,1475.46,1753.54,EIA923
+2012,NSB Nuiqsut Utility,26616,7484,1416.82,2047.18,EIA923
+2012,TNSG North Plant,57494,58278,35559,,EIA923
+2012,TNSG South Plant,57494,58117,35559,,EIA923
+2013,NSB Nuiqsut Utility,26616,7484,4688.14,1235.85,EIA923
+2013,TNSG North Plant,57494,58278,60500,,EIA923
+2013,TNSG South Plant,57494,58117,10677,,EIA923

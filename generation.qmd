@@ -110,7 +110,7 @@ regional_generation_plot <-
   
   scale_y_continuous(
     name = "Generation (GWh)\n",
-    limits = c(0,7000),
+    limits = c(0,7150),
     breaks = seq(0,6500, by = 500),
     expand = c(0, 0)) +
   
