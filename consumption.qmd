@@ -248,7 +248,7 @@ print(customers_pdf)
 
 `r space()`
 
-`r if (knitr::is_html_output())"@fig-sales_per_capita-html" else if (knitr::is_latex_output()) "@fig-sales_per_capita-pdf"` <!--orig: The following table--> shows the average annual electricity consumption for each of the regions. The Coastal region led the state in consumption per capita, with an average of `r regional_consumption_per_capita("Coastal","Residential")` kWh per customer per year. This was followed by the Railbelt region with `r regional_consumption_per_capita("Railbelt","Residential")` kWh per capita and the Rural Remote region with `r regional_consumption_per_capita("Rural Remote","Residential")` kWh per capita. Overall, each region has seen reductions in consumption per capita, which may reflect improvements in energy efficient technologies and energy efficiency/conservation behaviors.
+`r if (knitr::is_html_output())"@fig-sales_per_capita-html" else if (knitr::is_latex_output()) "@fig-sales-per-capita-pdf"` <!--orig: The following table--> shows the average annual electricity consumption for each of the regions. The Coastal region led the state in consumption per capita, with an average of `r regional_consumption_per_capita("Coastal","Residential")` kWh per customer per year. This was followed by the Railbelt region with `r regional_consumption_per_capita("Railbelt","Residential")` kWh per capita and the Rural Remote region with `r regional_consumption_per_capita("Rural Remote","Residential")` kWh per capita. Overall, each region has seen reductions in consumption per capita, which may reflect improvements in energy efficient technologies and energy efficiency/conservation behaviors.
 
 `r space()`
 
@@ -317,7 +317,7 @@ girafe(code = print(sales_per_capita_html))
 ```
 
 ```{r, eval=knitr::is_latex_output(), fig.pos = "H"}
-#| label: fig-sales_per_capita-pdf
+#| label: fig-sales-per-capita-pdf
 #| fig-cap: "Average Residential Sales per Customer"
 
 sales_per_capita_pdf <- 

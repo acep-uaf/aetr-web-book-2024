@@ -9,6 +9,7 @@ book:
       text: Alaska Energy Statistics Workbooks (2011-2021)
       icon: bi-file-spreadsheet
   repo-actions: [issue]
+  downloads: pdf
 
   chapters:
     - index.qmd

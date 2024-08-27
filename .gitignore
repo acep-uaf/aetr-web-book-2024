@@ -11,6 +11,18 @@ dev_*
 *_cache/
 _site/
 _book/
+README_files/
+capacity_files/
+consumption_files/
+generation_files/
+prices_files/
+*.html
+*.aux
+*.lof
+*.log
+*.lot
+*.tex
+*.toc
 
 node_modules/
 
