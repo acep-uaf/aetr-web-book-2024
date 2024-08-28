@@ -237,4 +237,4 @@ Please visit the Alaska Energy Authority  [PCE webpage](https://www.akenergyauth
 
 ## Feedback Regarding Potential Errors
 
-Since these data come from multiple sources, there is potential for errors in its compilation. An integral part of this effort is the creation of a high quality dataset that can constructively contribute to future work. Therefore, any discrepancies or noted errors should be reported using email or GitHub issues via the links in the right hand navigation menu of every page. Alternatively, direct contact information for members of the DCM team is listed in @sec-contacts.
+Since these data come from multiple sources, there is potential for errors in its compilation. An integral part of this effort is the creation of a high quality dataset that can constructively contribute to future work. Therefore, any discrepancies or noted errors should be reported by emailing [support](mailto:uaf-acep-dcm-support@alaska.edu) or submitting a GitHub issue via the links in the right hand navigation menu of every page of the web book. Alternatively, direct contact information for members of the DCM team is listed in @sec-contacts. 

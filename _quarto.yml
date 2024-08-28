@@ -20,5 +20,6 @@ warning: false
 cap-location: top
 
 profile:
+  default: html  # toggle this to choose which profile to render if neither is specified
   group: 
     - [pdf, html]

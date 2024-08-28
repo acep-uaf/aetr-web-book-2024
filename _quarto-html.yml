@@ -52,6 +52,7 @@ format:
     code-copy: true
     code-overflow: wrap
     css: styles.css
+    email-obfuscation: javascript
     # fig-align: center  Tried this but it overridden by Observable defaults (bootstrap?) 
     number-depth: 2
     theme:
