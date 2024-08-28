@@ -84,7 +84,7 @@
     "href": "methods.html#feedback-regarding-potential-errors",
     "title": "2  Methods",
     "section": "2.4 Feedback Regarding Potential Errors",
-    "text": "2.4 Feedback Regarding Potential Errors\nSince these data come from multiple sources, there is potential for errors in its compilation. An integral part of this effort is the creation of a high quality dataset that can constructively contribute to future work. Therefore, any discrepancies or noted errors should be reported by emailing support (uaf-acep-dcm-support at alaska dot edu) or submitting a GitHub issue via the links in the right hand navigation menu of every page of the web book. Alternatively, direct contact information for members of the DCM team is listed in Section D.2.",
+    "text": "2.4 Feedback Regarding Potential Errors\nSince these data come from multiple sources, there is potential for errors in its compilation. An integral part of this effort is the creation of a high quality dataset that can constructively contribute to future work. Therefore, any discrepancies or noted errors should be reported using email or GitHub issues via the links in the right hand navigation menu of every page. Alternatively, direct contact information for members of the DCM team is listed in Section D.2.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Methods</span>"
     ]
