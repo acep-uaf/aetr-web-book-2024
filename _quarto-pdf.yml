@@ -23,6 +23,7 @@ format:
     pdfengine: xelatex
     documentclass: scrreprt
     papersize: a4
+    mainfont: Barlow
 
     fig-width: 6
     fig-height: 3.25
