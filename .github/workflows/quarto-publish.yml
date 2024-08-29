@@ -62,21 +62,18 @@ jobs:
         env:
           QUARTO_PROFILE: html
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
-      
-      - name: Check chromium
-        # hack from https://github.com/quarto-dev/quarto-actions/issues/45
-        run: |
-          echo $(which chromium-browser)
-          $(which chromium-browser) --headless https://www.chromestatus.com
         
-      - name: Render PDF
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          to: pdf
-          path: .
-        env:
-          QUARTO_PROFILE: pdf
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#      - name: Render PDF
+#        uses: quarto-dev/quarto-actions/render@v2
+#        with:
+#          to: pdf
+#          path: .
+#        env:
+#          QUARTO_PROFILE: pdf
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Manually Render PDF
+        run: quarto render --profile pdf --output-dir _book
     
         # Debug: List files after rendering PDF
       - name: List files after rendering PDF
