@@ -22,7 +22,7 @@ format:
   pdf:
     pdfengine: xelatex
     documentclass: scrreprt
-    papersize: a4
+    papersize: letter
 
     fig-width: 6
     fig-height: 3.25
