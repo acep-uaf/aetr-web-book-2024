@@ -14,20 +14,19 @@ source("scripts/R/space.R")
 
 `r space(br="", vspace="-3em")`
 
+::: {.content-visible when-format="html"}
+
 ## Welcome  {#welcome .unnumbered}
 
-This report summarizes electricity data gathered from federal, state, and utility sources. It provides an overview of electricity capacity, generation, consumption, and price trends from 2011 to 2021. A comprehensive report highlighting these trends has not been produced for the state of Alaska since 2013's _Alaska Energy Statistics Report_.
+This report summarizes electricity data gathered from federal, state, and utility sources. It provides an overview of electricity capacity, generation, consumption, and price trends from 2011 to 2021. A comprehensive report highlighting these trends has not been produced for the state of Alaska since 2013's _Alaska Energy Statistics Report_. It is available in two formats: as a PDF and as a digital "web book".
 
-::: {.content-visible when-format="html"}
-This web book is designed as 'best available' document for the 2011-2021 energy trends data and reports. This website will be updated when updates to the underlying 2011-2021 data or fixes become available. Future year trends reports will be tackled in a different context and reporting structure.
+The web book is designed as 'best available' document for the 2011-2021 energy trends data and reports. This website will be updated when updates to the underlying 2011-2021 data or fixes become available. Future year trends reports will be tackled in a different context and reporting structure.
 
 Please explore the data using the chapter navigation links in the left sidebar and the section navigation links in the right sidebar. 
-:::
 
 ## How to Cite
-::: {.content-visible when-format="html"}
 
-Alaska Center for Energy and Power. "2024 Alaska Energy Trends Report Web Book." Accessed `{ojs} currentDate`. https://acep-uaf.github.io/aetr-web-book-2024
+Kaczmarski, J., I. Yeager, S. Colt, E. L. Dobbins, N. McMahon, S. Fisher-Goad, and B. Smart. "2024 Alaska Energy Trends Report Web Book." Accessed `{ojs} currentDate`. https://acep-uaf.github.io/aetr-web-book-2024
 
 ```{ojs}
 //| echo: false
@@ -55,7 +54,7 @@ citation_button = (blob, filename = 'test.bib', displayname) => {
 // BibLaTeX content
 biblatexContent = 
 `@online{aetr_web_book_2024,
-    author = {{Alaska Center for Energy and Power}},
+    author = {Jesse Kaczmarski and Ian Yeager and Steve Colt and Elizabeth L. Dobbins and Neil McMahon and Sara Fisher-Goad and Brittany Smart},
     title = {{2024 Alaska Electricity Trends Report}},
     year = 2024,
     url = {https://acep-uaf.github.io/aetr-web-book-2024/},
@@ -64,7 +63,13 @@ biblatexContent =
 
 risContent = 
 `TY  - ELEC
-AU  - Alaska Center for Energy and Power
+AU  - Kaczmarski,Jesse
+AU  - Yeager,Ian
+AU  - Colt,Steve
+AU  - Dobbins,Elizabeth L.
+AU  - McMahon,Neil
+AU  - Fisher-Goad,Sara
+AU  - Smart,Brittany
 TI  - 2024 Alaska Electricity Trends Report
 PY  - 2024
 DA  - {${year}-${month_2digit}-${day_2digit}}
@@ -84,33 +89,10 @@ citation_button(ris_blob, 'aetr_web_book_2024.ris', 'RIS');
 
 :::
 
-
-::: {.content-visible when-format="pdf"}
-
-##### APA:
-Alaska Center for Energy and Power. (2024). Alaska Energy Trends Report. Retrieved `r format(Sys.Date(), "%B %d, %Y")`, from https://acep-uaf.github.io/aetr-web-book-2024/report2024.pdf
-
-###### BibLaTeX:
-```{r, eval=FALSE, echo=TRUE}
-@online{aetr_web_book_2024,
-    author = {{Alaska Center for Energy and Power}},
-    title = {{2024 Alaska Electricity Trends Report}},
-    year = 2024,
-    url = {https://acep-uaf.github.io/aetr-web-book-2024/},
-    urldate = {2024-08-01}
-}
-```
-
-:::
-
-## Executive Summary {.unnumbered}
+## Executive Summary
 
 {{< include _executive_summary.qmd >}}
 
-
-## Key Takeaways {.unnumbered}
+## Key Takeaways
 
 {{< include _key_takeaways.qmd >}}
-
-
-

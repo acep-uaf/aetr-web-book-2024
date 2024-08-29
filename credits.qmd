@@ -37,75 +37,50 @@ Data used in the energy workbooks comes from a variety of sources and partners, 
 
 ## Credits and Roles  {#sec-contacts}
 
-```{r}
-#| echo: false
-# Hack to reuse footnotes from https://stackoverflow.com/questions/74632879/use-footnote-multiple-times-in-html-quarto
-
-gen_fn <- function(n, id) {
-  # n is number of footnote
-  # id is a unique id for that footnote
-  paste0('<a href="#',id, '" class="footnote-ref" role="doc-noteref" aria-expanded="false"><sup>', n, '</sup></a>')
-}
-```
-
 The Alaska Electrical Trends report has been produced by the Alaska Center for Energy and Power ([ACEP](https://www.uaf.edu/acep/)) at the University of Alaska Fairbanks ([UAF](https://www.uaf.edu/uaf/index.php)). It is a collaboration between data scientists, researchers, and policy experts. Roles here are described by [Contributor Roles Taxonomy (CRediT)](https://credit.niso.org/).
 
+### Authors
 
-* [Jesse Kaczmarski](https://www.uaf.edu/acep/about/our-team/jesse-kaczmarski.php)`r if (knitr::is_html_output()) gen_fn(1, "fn1") else "^1^"`
+* [Jesse Kaczmarski](https://www.uaf.edu/acep/about/our-team/jesse-kaczmarski.php)`r  "^1^"`
   * Roles: data curation, formal analysis, project administration, software, validation, visualization, writing – original draft
 
-* [Ian MacDougall](https://www.uaf.edu/acep/about/our-team/ian-macdougall.php)`r if (knitr::is_html_output()) gen_fn(1, "fn1") else "^1^"`
+* [Ian MacDougall](https://www.uaf.edu/acep/about/our-team/ian-macdougall.php)`r  "^1^"`
   * Roles: data curation, formal analysis, software, validation, visualization, writing – original draft
 
-* [Steve Colt](https://www.uaf.edu/acep/about/our-team/steve-colt.php)`r if (knitr::is_html_output()) gen_fn(1, "fn1") else "^1^"`
+* [Steve Colt](https://www.uaf.edu/acep/about/our-team/steve-colt.php)`r  "^1^"`
   * Roles: data curation, formal analysis, investigation, validation, writing – review & editing
 
-* [Elizabeth (Liz) Dobbins](https://www.uaf.edu/acep/about/our-team/elizabeth-dobbins.php)`r if (knitr::is_html_output()) gen_fn(1, "fn1") else "^1^"`
+* [Elizabeth (Liz) Dobbins](https://www.uaf.edu/acep/about/our-team/elizabeth-dobbins.php)`r  "^1^"`
   * Roles: software, project administration, resources, supervision, writing – review & editing
 
-* Neil McMahon`r if (knitr::is_html_output()) gen_fn(3, "fn3") else "^3^"`
+* Neil McMahon`r  "^2^"`
   * Roles: data curation, investigation, validation
 
-* [Sara Fisher-Goad](https://www.uaf.edu/research/contact-us/index.php)`r if (knitr::is_html_output()) gen_fn(2, "fn2") else "^2^"`
+* [Sara Fisher-Goad](https://www.uaf.edu/research/contact-us/index.php)`r  "^3^"`
   * Roles: conceptualization, validation, writing – review & editing
 
-* [Brittany Smart](https://www.uaf.edu/acep/about/our-team/brittany-smart.php)`r if (knitr::is_html_output()) gen_fn(1, "fn1") else "^1^"`
+* [Brittany Smart](https://www.uaf.edu/acep/about/our-team/brittany-smart.php)`r  "^3^"`
   * Roles: project administration, writing – review & editing
 
-* [Dayne Broderson](https://www.uaf.edu/acep/about/our-team/dayne-broderson.php)`r if (knitr::is_html_output()) gen_fn(1, "fn1") else "^1^"`
+### Acknowledgements
+
+* [Dayne Broderson](https://www.uaf.edu/acep/about/our-team/dayne-broderson.php)`r  "^1^"`
   * Roles: conceptualization, funding acquisition
 
-* [Gwen Holdmann](https://www.uaf.edu/acep/about/our-team/gwen-holdmann.php)`r if (knitr::is_html_output()) gen_fn(1, "fn1") else "^1^"`
+* [Gwen Holdmann](https://www.uaf.edu/acep/about/our-team/gwen-holdmann.php)`r  "^1^"`
   * Roles: conceptualization, funding acquisition
 
-* [Shivani Mathur](https://www.uaf.edu/acep/about/our-team/shivani-mathur.php)`r if (knitr::is_html_output()) gen_fn(1, "fn1") else "^1^"`
+* [Emily Richmond](https://www.uaf.edu/acep/about/our-team/emily-richmond.php)`r  "^1^"`
+  * Roles: software, visualization
+
+* [Shivani Mathur](https://www.uaf.edu/acep/about/our-team/shivani-mathur.php)`r  "^1^"`
   * Roles: validation, writing – review & editing
 
-* [Erika Boice](https://www.uaf.edu/acep/about/our-team/erika-boice.php)`r if (knitr::is_html_output()) gen_fn(1, "fn1") else "^1^"`
+* [Erika Boice](https://www.uaf.edu/acep/about/our-team/erika-boice.php)`r  "^1^"`
   * Roles: writing – review & editing
 
 ### Affiliations
 
-```{=html}
-<footer>
-  <ol  style="padding-left: 1rem;">
-    <li id="fn1"><p>Alaska Center for Energy and Power</p></li>
-    <li id="fn3"><p>Office of the Vice Chancellor for Research, UAF</p></li>
-    <li id="fn3"><p>Project Manager, <a href="https://www.dowl.com/">DOWL</a></p></li>
-  </ol>
-</footer>
-```
-
-::: {.content-visible when-format="pdf"} 
-
-**^1^ [Alaska Center for Energy and Power](https://www.uaf.edu/acep/)</span>**  
-
-\vspace{1em}
-
-**^2^ [Office of the Vice Chancellor for Research, UAF](https://www.uaf.edu/research/)**  
-
-\vspace{1em}
-
-**^3^ [DOWL](https://www.dowl.com)**  
-
-:::
+1. Alaska Center for Energy and Power ([ACEP](https://www.uaf.edu/acep/)), University of Alaska Fairbanks ([UAF](https://www.uaf.edu/uaf/index.php))
+2. Project Manager, [DOWL](https://www.dowl.com/)
+3. [Office of the Vice Chancellor for Research](https://www.uaf.edu/research/), University of Alaska Fairbanks ([UAF](https://www.uaf.edu/uaf/index.php))
