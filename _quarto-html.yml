@@ -9,6 +9,7 @@ book:
       text: Alaska Energy Statistics Workbooks (2011-2021)
       icon: bi-file-spreadsheet
   repo-actions: [issue]
+  downloads: pdf
 
   chapters:
     - index.qmd
@@ -51,6 +52,7 @@ format:
     code-copy: true
     code-overflow: wrap
     css: styles.css
+    email-obfuscation: javascript
     # fig-align: center  Tried this but it overridden by Observable defaults (bootstrap?) 
     number-depth: 2
     theme:
