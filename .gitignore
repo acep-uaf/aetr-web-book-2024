@@ -197,3 +197,6 @@ cython_debug/
 # If you accidently render a _prices_raincloud.qmd
 _prices_raincloud_files/
 _prices_raincloud.html
+
+# Specifically allow the tex files in scripts/
+!scripts/latex/*.tex

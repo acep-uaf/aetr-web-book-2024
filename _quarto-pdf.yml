@@ -29,6 +29,7 @@ format:
 
     fontsize: 11pt
     mainfont: Barlow
+    toccolor: blue
 
     toc: true   
     toc-depth: 3
@@ -40,5 +41,6 @@ format:
 
     template-partials:
       - scripts/latex/before-body.tex
+      - scripts/latex/toc.tex
     include-in-header: 
       - scripts/latex/preamble.tex
