@@ -43,14 +43,17 @@ The @tbl-report-eras provides a summary of this timeline. This report serves to 
 
 For a table of links to these historic reports, please refer to @tbl-historic-reports.
 
-::: {.content-visible when-format="html"}
 ## Technical Details
 
-The book is formatted using [Quarto](https://quarto.org), an open-source scientific and technical publishing system. The template was developed by the Openscapes project, as part of their [Quarto Website Tutorial](https://github.com/Openscapes/quarto-website-tutorial).
+This report has been formatted and rendered using [Quarto](https://quarto.org), an open-source scientific and technical publishing system. The initial inspiration for this workflow was provided by the Openscapes project and their [Quarto Website Tutorial](https://github.com/Openscapes/quarto-website-tutorial). This publishing method experimentally models a new (to ACEP) method of automatically generating reports that include data.
 
-The markdown files that make up the book reside in the [aetr-web-book](https://github.com/acep-uaf/aetr-web-book) GitHub repository. The generation process is publicly accessible. Errors in the document can be flagged using GitHub issues where they can be tracked and addressed by the DCM team.
+The markdown files that create the report reside in the [aetr-web-book-2024](https://github.com/acep-uaf/aetr-web-book-2024) GitHub repository. The original format of the report was an HTML-based web book, and an option for rendering it in PDF format was added months later. The generation material and process is publicly accessible and transparent. Errors in the document are flagged using GitHub issues where they can be tracked and addressed by the DCM team. The report also integrates R code for data processing and figure generation.
 
-The book also integrates R code for data processing and figure generation. When data files are updated, manually triggering the Quarto render will update the figures automatically.
+Early versions of this report contained errors in the data. These were flagged with GitHub issues and corrected in subsequent tagged versions. When data files were updated, the Quarto render updated the figures automatically, reducing the labor required to maintain an up-to-date report.
+
+The web-first workflow of PDF report generation resulted in some formatting issues that are difficult to correct using this system. These issues include pagination that sometimes separates figures from contextual information. While this is not ideal, we hope to refine our techniques in future reports and to eventually produce a publication quality report.
+
+::: {.content-visible when-format="html"}
 
 ## Notice of Nondiscrimination
 

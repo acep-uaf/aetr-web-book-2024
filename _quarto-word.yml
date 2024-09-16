@@ -1,0 +1,43 @@
+book:
+  chapters:
+    - index.qmd
+    - methods.qmd
+    - capacity.qmd
+    - generation.qmd
+    - consumption.qmd
+    - prices.qmd
+    - conclusions.qmd
+    - data.qmd
+  appendices:
+    - about.qmd
+    - historic_reports.qmd
+    - acronyms.qmd
+    - credits.qmd 
+
+crossref:
+  appendix-title: "Appendix"
+  appendix-delim: ":"
+
+format:
+  docx:
+    #pdfengine: xelatex
+    #documentclass: scrreprt
+    papersize: letter
+
+    fig-width: 6
+    fig-height: 3.25
+
+    fontsize: 11pt
+    mainfont: Barlow
+    toccolor: blue
+
+    toc: true   
+    toc-depth: 3
+    toc-title: "Table of contents"
+    lof: true   
+    lot: true   
+    number-sections: true
+    number-depth: 2
+
+    include-in-header: 
+      - scripts/latex/preamble.tex

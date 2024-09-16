@@ -65,10 +65,10 @@ The Alaska Electrical Trends report has been produced by the Alaska Center for E
 ### Acknowledgements
 
 * [Dayne Broderson](https://www.uaf.edu/acep/about/our-team/dayne-broderson.php)`r  "^1^"`
-  * Roles: conceptualization, funding acquisition, visualization
+  * Roles: conceptualization, funding acquisition, visualization, writing – original draft
 
 * [Gwen Holdmann](https://www.uaf.edu/acep/about/our-team/gwen-holdmann.php)`r  "^1^"`
-  * Roles: conceptualization, funding acquisition
+  * Roles: conceptualization, funding acquisition, writing – original draft
 
 * [Emily Richmond](https://www.uaf.edu/acep/about/our-team/emily-richmond.php)`r  "^1^"`
   * Roles: software, visualization

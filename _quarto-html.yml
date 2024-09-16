@@ -38,7 +38,8 @@ book:
 
   page-footer:
     right: "This page is built with [Quarto](https://quarto.org/)."
-    center: "&copy; [CC BY-SA 4.0](https://github.com/acep-uaf/aetr-web-book-2024/blob/main/LICENSE.md), 2024<br /> [Alaska Center for Energy and Power](https://www.uaf.edu/acep/)"
+    left: "&copy; [CC BY-SA 4.0](https://github.com/acep-uaf/aetr-web-book-2024/blob/main/LICENSE.md), 2024<br /> [Alaska Center for Energy and Power](https://www.uaf.edu/acep/)"
+    center: "UA is an affirmative action/equal opportunity employer, educational institution and provider and prohibits illegal discrimination against any individual: www.alaska.edu/nondiscrimination."
 
 # These change page titles https://quarto.org/docs/books/book-structure.html#parts-appendices 
 # but not in the sidebar navigation or in cross-references
