@@ -24,6 +24,17 @@ The web book is designed as 'best available' document for the 2011-2021 energy t
 
 Please explore the data using the chapter navigation links in the left sidebar and the section navigation links in the right sidebar. 
 
+:::
+
+## Executive Summary
+
+{{< include _executive_summary.qmd >}}
+
+## Key Takeaways
+
+{{< include _key_takeaways.qmd >}}
+
+::: {.content-visible when-format="html"}
 ## How to Cite
 
 Kaczmarski, J., I. Yeager, S. Colt, E. L. Dobbins, N. McMahon, S. Fisher-Goad, and B. Smart. "2024 Alaska Energy Trends Report Web Book." Accessed `{ojs} currentDate`. https://acep-uaf.github.io/aetr-web-book-2024
@@ -88,11 +99,3 @@ citation_button(ris_blob, 'aetr_web_book_2024.ris', 'RIS');
 ```
 
 :::
-
-## Executive Summary
-
-{{< include _executive_summary.qmd >}}
-
-## Key Takeaways
-
-{{< include _key_takeaways.qmd >}}
