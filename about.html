@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -36,10 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-8bee82b8e7aebb660feaa1f48ab703c2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -231,7 +231,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">Sep 10, 2024 at 17:47 UTC</p>
+      <p class="date">Dec 13, 2024 at 22:34 UTC</p>
     </div>
   </div>
   
@@ -317,9 +317,10 @@ Table&nbsp;A.1: Historical Timeline of Reports
 </section>
 <section id="technical-details" class="level2" data-number="A.3">
 <h2 data-number="A.3" class="anchored" data-anchor-id="technical-details"><span class="header-section-number">A.3</span> Technical Details</h2>
-<p>The book is formatted using <a href="https://quarto.org">Quarto</a>, an open-source scientific and technical publishing system. The template was developed by the Openscapes project, as part of their <a href="https://github.com/Openscapes/quarto-website-tutorial">Quarto Website Tutorial</a>.</p>
-<p>The markdown files that make up the book reside in the <a href="https://github.com/acep-uaf/aetr-web-book">aetr-web-book</a> GitHub repository. The generation process is publicly accessible. Errors in the document can be flagged using GitHub issues where they can be tracked and addressed by the DCM team.</p>
-<p>The book also integrates R code for data processing and figure generation. When data files are updated, manually triggering the Quarto render will update the figures automatically.</p>
+<p>This report has been formatted and rendered using <a href="https://quarto.org">Quarto</a>, an open-source scientific and technical publishing system. The initial inspiration for this workflow was provided by the Openscapes project and their <a href="https://github.com/Openscapes/quarto-website-tutorial">Quarto Website Tutorial</a>. This publishing method experimentally models a new (to ACEP) method of automatically generating reports that include data.</p>
+<p>The markdown files that create the report reside in the <a href="https://github.com/acep-uaf/aetr-web-book-2024">aetr-web-book-2024</a> GitHub repository. The original format of the report was an HTML-based web book, and an option for rendering it in PDF format was added months later. The generation material and process is publicly accessible and transparent. Errors in the document are flagged using GitHub issues where they can be tracked and addressed by the DCM team. The report also integrates R code for data processing and figure generation.</p>
+<p>Early versions of this report contained errors in the data. These were flagged with GitHub issues and corrected in subsequent tagged versions. When data files were updated, the Quarto render updated the figures automatically, reducing the labor required to maintain an up-to-date report.</p>
+<p>The web-first workflow of PDF report generation resulted in some formatting issues that are difficult to correct using this system. These issues include pagination that sometimes separates figures from contextual information. While this is not ideal, we hope to refine our techniques in future reports and to eventually produce a publication quality report.</p>
 </section>
 <section id="notice-of-nondiscrimination" class="level2" data-number="A.4">
 <h2 data-number="A.4" class="anchored" data-anchor-id="notice-of-nondiscrimination"><span class="header-section-number">A.4</span> Notice of Nondiscrimination</h2>
@@ -411,8 +412,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -523,7 +522,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -765,10 +763,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-      &nbsp;
-    </div>   
-    <div class="nav-footer-center">
 <p>© <a href="https://github.com/acep-uaf/aetr-web-book-2024/blob/main/LICENSE.md">CC BY-SA 4.0</a>, 2024<br> <a href="https://www.uaf.edu/acep/">Alaska Center for Energy and Power</a></p>
+</div>   
+    <div class="nav-footer-center">
+<p>UA is an affirmative action/equal opportunity employer, educational institution and provider and prohibits illegal discrimination against any individual: www.alaska.edu/nondiscrimination.</p>
 <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/acep-uaf/aetr-web-book-2024/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
