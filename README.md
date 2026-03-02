@@ -30,7 +30,7 @@ Rendering this web-book requires R (>=4.4.0) and some R packages.
 
 [Web book Previewing](https://quarto.org/docs/websites/#website-preview) describes viewing the website locally by using `quarto preview` on the command line to generate HTML from the `qmd` files. The generated HTML code goes in the `_book/` directory. It should also automatically open a browser window. See `quarto preview help` for hints.
 
-However, we use [Profiles](https://github.com/acep-uaf/aetr-web-book-2024/wiki/Quarto-Profiles) in this repository with three different configuration files which complicates local previewing somewhat.
+However, we use [Profiles](https://github.com/acep-uaf/aetr-web-book-2024/wiki/Quarto-Profiles) in this repository with three different configuration files, which complicates local previewing.
 
 1. `_quarto.yml` = the main configuration file that triggers the other two
 2. `_quarto-html.yml` = configures the web book
